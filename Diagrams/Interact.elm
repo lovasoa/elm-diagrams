@@ -1,9 +1,9 @@
-module Diagrams.Interact
+module Diagrams.Interact exposing
     ( RenderFunc, UpdateFunc
     , InteractionState, MouseState
     , initInteractState, interactFold, update, updateModel, initMouseState
     , processMouseEvent
-    ) where
+    ) 
 
 {-| An abstraction for making diagrams which change as a function of the mouse.
 
@@ -26,14 +26,13 @@ Mailboxes to push out updates)
 
 -}
 
-import Signal as S
 import Window
 import Mouse
 
 import List as L
 import Maybe as M
-import Graphics.Element as E
-import Graphics.Collage as C
+import Element as E
+import Collage as C
 
 import Diagrams.Core exposing (..)
 import Diagrams.Type exposing (..)

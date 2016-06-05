@@ -1,13 +1,13 @@
-module Diagrams.Envelope
+module Diagrams.Envelope exposing
     ( envelope, width, height, boundingBox
-    ) where
+    )
 
 {-|
 @docs envelope, width, height, boundingBox
 -}
 
 import List as L
-import Graphics.Element as E
+import Element as E
 import Maybe as M
 
 import Diagrams.Core exposing (..)

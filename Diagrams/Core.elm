@@ -1,10 +1,10 @@
-module Diagrams.Core
+module Diagrams.Core exposing
     ( circle, rect, path, polygon, text, spacer, transform
     , group, tag, tagWithActions, ngon, eqTriangle
     , move, moveX, moveY, scale, rotate
     , render
     , empty, vspace, hspace, vline, hline
-    ) where
+    ) 
 
 {-| Diagrams is a library built on top of `Graphics.Collage` which allows you to
 construct graphics by laying out elements relative to each other.
@@ -53,11 +53,11 @@ which exports everything is a good idea.
 
 -}
 
-import Graphics.Collage as C
-import Graphics.Element as E
+import Collage as C
+import Element as E
 import Text as T
 import List as L
-import Transform2D
+import Transform as Transform2D
 import Color
 
 import Diagrams.Geom exposing (..)

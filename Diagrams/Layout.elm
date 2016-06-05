@@ -1,4 +1,4 @@
-module Diagrams.Layout where
+module Diagrams.Layout exposing (..)
 
 {-| A utility for laying out variable-width diagrams.
 

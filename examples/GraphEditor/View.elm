@@ -1,4 +1,4 @@
-module GraphEditor.View where
+module GraphEditor.View exposing (..)
 
 import Text as T
 import Graphics.Collage as C

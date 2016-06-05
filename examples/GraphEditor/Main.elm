@@ -1,4 +1,4 @@
-module GraphEditor.Main where
+module GraphEditor.Main exposing (..)
 
 import Dict as D
 import Signal

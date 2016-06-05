@@ -1,4 +1,4 @@
-module GraphEditor.Controller where
+module GraphEditor.Controller exposing (..)
 
 import Debug
 

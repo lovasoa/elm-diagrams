@@ -1,4 +1,4 @@
-module Diagrams.FullWindow where
+module Diagrams.FullWindow exposing (..)
 
 {-| Utilities for when you just want to get a diagram on the whole screen.
 
@@ -8,9 +8,8 @@ See `Diagrams.Wiring` docs for more info on `CollageLocation`s.
 -}
 
 import Window
-import Signal as S
-import Graphics.Element as E
-import Graphics.Collage as C
+import Element as E
+import Collage as C
 
 import Diagrams.Wiring exposing (..)
 import Diagrams.Core exposing (..)
@@ -36,9 +35,9 @@ fullWindowUpdates =
 
     main = fullWindowMain (rect 10 10 (justFill <| Solid Color.orange))
 -}
-fullWindowMain : Diagram t a -> Signal E.Element
+fullWindowMain : Diagram t a -> Task x E.Element
 fullWindowMain dia =
-  S.map (\dims -> fullWindowView dims dia) Window.dimensions
+  Task.map (\dims -> fullWindowView dims dia) Window.dimensions
 
 {-|-}
 fullWindowView : (Int, Int) -> Diagram t a -> E.Element

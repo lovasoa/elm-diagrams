@@ -1,4 +1,4 @@
-module GraphEditor.Model where
+module GraphEditor.Model exposing (..)
 
 import Diagrams.Geom exposing (Point)
 
